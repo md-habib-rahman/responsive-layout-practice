@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive layout 1</title>
+</head>
+<style>
+	* {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+	}
+
+	.post-container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.post {
+		display: flex;
+		height: 350px;
+		gap: 20px;
+	}
+
+	.post img {
+		width: 30%;
+		object-fit: cover;
+	}
+
+	.post-details h2 {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	.post-details {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	button {
+		padding: 15px 30px;
+		border: none;
+		background-color: #08f3df;
+		font-size: 1.1rem;
+		border-radius: 5px;
+	}
+
+	@media screen and (max-width:576px) {
+		.post {
+			flex-direction: column;
+			height: auto;
+			gap: 0;
+		}
+
+		.post img {
+			width: 100%;
+			height: 40vh;
+		}
+
+		.post-details {
+			padding: 10px;
+
+
+		}
+	}
+</style>
+
+<body>
+	<div class="post-container">
+		<div class="post">
+			<img src="images/burger-with-melted-cheese.webp" alt="">
+			<div class="post-details">
+				<h2 class="post-title">Burger</h2>
+				<p class="post-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ex ut itaque.
+					Eveniet adipisci quasi eligendi libero tempore dolor ab at quis dolore necessitatibus quidem,
+					aliquid tenetur totam qui dignissimos Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptate tenetur dolorum sint sed error, quae, neque ipsa impedit similique recusandae veritatis
+					vero inventore nobis dolorem eos minus ullam iure ipsam.
+					Veniam quos, nam non a voluptatem expedita! Minima harum cum reiciendis accusamus dignissimos a quos
+					nobis sequi autem dolorem, esse culpa eveniet quisquam beatae expedita aspernatur placeat ipsam
+					itaque commodi?
+					Beatae, officia? Mollitia, eaque laudantium illo beatae debitis ea vitae maxime non voluptatem
+					accusantium et velit dicta ullam eos, error aliquam laboriosam ab cupiditate! Sequi, vel maxime.
+					Inventore, veniam nostrum!
+
+				</p>
+				<div class="button"><button class="btn-primary">Read More</button></div>
+
+			</div>
+		</div>
+		<div class="post">
+			<img src="images/photo-1612927601601-6638404737ce.jpg" alt="">
+			<div class="post-details">
+				<h2 class="post-title">Noodles</h2>
+				<p class="post-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam totam
+					impedit maiores quo officia officiis, ducimus, animi distinctio adipisci sapiente laudantium nostrum
+					alias tempore tempora voluptatum, vitae sequi magnam labore! Lorem ipsum dolor, sit amet consectetur
+					adipisicing elit. Corporis numquam ex non placeat, in nesciunt ullam! Quasi a, nobis aspernatur sint
+					accusamus, molestias aperiam quibusdam obcaecati, voluptatum sunt totam error!
+					Voluptatum illum, accusamus assumenda perferendis quisquam minima ut! Recusandae quibusdam a
+					quisquam mollitia sunt quasi quo nemo est provident ratione, quidem, similique tempore perferendis
+					nesciunt iste, commodi aspernatur quod reiciendis!
+					Aliquid, dicta! Distinctio reprehenderit impedit qui ratione iusto perspiciatis sequi? Neque,
+					praesentium in est possimus harum cumque culpa. Voluptatibus non obcaecati inventore, fugit magnam
+					doloribus ex voluptas ut aspernatur magni!</p>
+				<div class="button"><button class="btn-primary">Read More</button></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

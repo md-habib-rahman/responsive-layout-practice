@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Flex</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			padding: 10px 10px;
+		}
+
+		.container {
+			width: 95vw;
+			height: 95vh;
+			border: 3px solid #050565;
+			border-radius: 10px;
+			display: flex;
+			padding: 10px;
+			gap: 10px;
+		}
+
+		.left {
+			border-radius: 10px;
+			background-color: gray;
+			height: 100%;
+			width: 30%;
+		}
+
+		.right {
+			border-radius: 10px;
+			background-color: lightgoldenrodyellow;
+			height: 100%;
+			width: 70%;
+		}
+
+		.inner-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2rem;
+			font-weight: bold;
+		}
+
+		@media screen and (max-width: 576px) {
+			.container {
+				flex-direction: column;
+			}
+
+			.inner-box {
+				width: 100%;
+			}
+
+			.left {
+				height: 30%;
+			}
+
+			.right {
+				height: 70%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="inner-box left">
+			<p>Left</p>
+		</div>
+		<div class="inner-box right">
+			<p>Right</p>
+		</div>
+	</div>
+</body>
+
+</html>
