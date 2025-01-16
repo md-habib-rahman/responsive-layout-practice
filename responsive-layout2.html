@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Layout 2
+	</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+		}
+
+		.post-container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.post {
+			display: flex;
+
+		}
+
+		.post-text {
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.post-text h2 {
+			/* margin-top: 10px; */
+			font-size: 2rem;
+			font-weight: 900;
+		}
+
+		.post-text p {
+			margin-top: 10px;
+			font-size: 1rem;
+			font-weight: 400;
+		}
+
+		.post:nth-child(2n) {
+			display: flex;
+			flex-direction: row-reverse;
+		}
+
+		.post img {
+			width: 50%;
+		}
+
+		@media screen and (max-width:576px) {
+			.post {
+				flex-direction: column;
+
+			}
+
+			.post img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="post-container">
+		<div class="post">
+			<div><img src="images/pexels-pixabay-302769.jpg" alt=""></div>
+
+			<div class="post-text">
+				<h2 class="post-title">Post Title</h2>
+				<p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quasi.
+					Nesciunt
+					quam in minus deleniti aspernatur cupiditate sunt natus laboriosam ea quisquam laudantium qui
+					possimus,
+					ipsa maiores. Ipsam, suscipit laudantium?
+					Tenetur harum laborum earum. Consequatur, nihil minus. Beatae, veniam mollitia. Illum provident
+					inventore nisi voluptas exercitationem quia blanditiis dicta cupiditate accusamus fugiat, facilis
+					nulla,
+					tempora, consectetur dolor molestiae ea odit.
+					Voluptatem magni cupiditate voluptatum voluptate distinctio, eius blanditiis, magnam ratione saepe,
+					dignissimos dicta aperiam excepturi ipsum nihil. Voluptas in expedita sit quia. Debitis quam
+					tenetur,
+					saepe veniam illo quasi deserunt!
+					Velit perferendis, accusamus fugit nobis id deserunt cupiditate sed corporis nisi veritatis
+					temporibus
+					autem vel dolores impedit facere earum, nemo vero aliquid ut? Dolorem sed quaerat impedit
+					asperiores.
+					Repellat, ut?
+				</p>
+			</div>
+
+
+
+			<div class="post">
+				<div><img src="images/ESB Day.jpg" alt=""></div>
+
+				<div class="post-text">
+					<h2 class="post-title">Post Title</h2>
+					<p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quasi.
+						Nesciunt
+						quam in minus deleniti aspernatur cupiditate sunt natus laboriosam ea quisquam laudantium qui
+						possimus,
+						ipsa maiores. Ipsam, suscipit laudantium?
+						Tenetur harum laborum earum. Consequatur, nihil minus. Beatae, veniam mollitia. Illum provident
+						inventore nisi voluptas exercitationem quia blanditiis dicta cupiditate accusamus fugiat,
+						facilis
+						nulla,
+						tempora, consectetur dolor molestiae ea odit.
+						Voluptatem magni cupiditate voluptatum voluptate distinctio, eius blanditiis, magnam ratione
+						saepe,
+						dignissimos dicta aperiam excepturi ipsum nihil. Voluptas in expedita sit quia. Debitis quam
+						tenetur,
+						saepe veniam illo quasi deserunt!
+						Velit perferendis, accusamus fugit nobis id deserunt cupiditate sed corporis nisi veritatis
+						temporibus
+						autem vel dolores impedit facere earum, nemo vero aliquid ut? Dolorem sed quaerat impedit
+						asperiores.
+						Repellat, ut?
+					</p>
+				</div>
+
+
+			</div>
+
+</body>
+
+</html>
